@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DATOS"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtNombre_Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5"
+            android:ems="10"
+            android:hint="Escribe tu nombre"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/btnBorrarNombreMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@android:drawable/ic_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtEdad_Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5"
+            android:ems="10"
+            android:hint="Escribe tu edad"
+            android:inputType="number" />
+
+        <ImageButton
+            android:id="@+id/btnBorrarEdadMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@android:drawable/ic_delete" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGuardar_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="GUARDAR" />
+
+    <Button
+        android:id="@+id/btnBorrarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BORRAR DATOS" />
+
+    <Button
+        android:id="@+id/btnJSON_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IR A JSON" />
+
+</LinearLayout>
